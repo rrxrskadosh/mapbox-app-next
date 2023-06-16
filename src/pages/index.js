@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styled from "styled-components"
+import Link from "next/link"
 // Logo
 import Logo from '../../public/gummy-location.svg'
 
@@ -17,8 +18,10 @@ export default function Home() {
         <AppTitle>
           Map<span>Box</span>
         </AppTitle>
-
-        <RoundButton>Get Started</RoundButton>
+        <Link href="welcomepage">
+          <RoundButton>Get Started</RoundButton>
+        </Link>
+        
         <DevCredit>
           Develop by <a href="#">Roger Reyes</a>
         </DevCredit>
