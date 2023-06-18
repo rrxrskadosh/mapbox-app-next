@@ -1,8 +1,11 @@
 // Styled Components
 import styled from "styled-components";
 
+// Next Link (Routes)
+import Link from "next/link";
+
 // Icons
-import IconLocation from "../../public/gps-location.svg"
+import IconLocation from "../../public/gps-location.svg";
 
 const MapForm = () => {
     return(
@@ -18,7 +21,9 @@ const MapForm = () => {
                     <Label>End</Label>
                     <Input placeholder="Destination" />
                 </InputBox>
-                <FormBtn>Get Direction</FormBtn>
+                <Link href="/routespage">
+                    <FormBtn>Get Direction</FormBtn>
+                </Link>
             </Form>
         </MapFormWrapper>
     )
